@@ -50,6 +50,12 @@ export default function Textform(props) {
         msg.text=text;
         window.speechSynthesis.speak(msg)
     }
+
+    const handleExtraSpaces = () => {
+      let newText = text.split(/[ ]+/);
+      setText(newText.join(" "));
+      props.showAlert("Extra spaces removed!", "success");
+  }
     const [text,setText]=useState('Enter text here');
   return (
     <>
@@ -63,6 +69,7 @@ export default function Textform(props) {
             <button className='btn btn-primary mx-1' onClick={handleSwapclick}> SwapCase</button>
             <button className='btn btn-primary mx-1' onClick={copy}> CopyText</button>
             <button className='btn btn-primary mx-1' onClick={speak}> Speak</button>
+            <button className='btn btn-primary mx-1' onClick={handleExtraSpaces}> Remove ExtraSpaces</button>
             <button className='btn btn-primary mx-1' onClick={clear}> Clear</button>
         </div>
         <div className='container my-3'>
