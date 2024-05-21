@@ -64,13 +64,13 @@ export default function Textform(props) {
                 <h1>{props.heading}</h1>
             <textarea className="form-control"  value={text} onChange={handleOnChange} id="mybox" rows="8"></textarea>
             </div>
-            <button className='btn btn-primary mx-1' onClick={handleUpclick}> UpperCase</button>
-            <button className='btn btn-primary mx-1' onClick={handleDownclick}> LowerCase</button>
-            <button className='btn btn-primary mx-1' onClick={handleSwapclick}> SwapCase</button>
-            <button className='btn btn-primary mx-1' onClick={copy}> CopyText</button>
-            <button className='btn btn-primary mx-1' onClick={speak}> Speak</button>
-            <button className='btn btn-primary mx-1' onClick={handleExtraSpaces}> Remove ExtraSpaces</button>
-            <button className='btn btn-primary mx-1' onClick={clear}> Clear</button>
+            <button className='btn btn-primary mx-1 my-2' onClick={handleUpclick}> UpperCase</button>
+            <button className='btn btn-primary mx-1 my-2' onClick={handleDownclick}> LowerCase</button>
+            <button className='btn btn-primary mx-1 my-2' onClick={handleSwapclick}> SwapCase</button>
+            <button className='btn btn-primary mx-1 my-2' onClick={copy}> CopyText</button>
+            <button className='btn btn-primary mx-1 my-2' onClick={speak}> Speak</button>
+            <button className='btn btn-primary mx-1 my-2' onClick={handleExtraSpaces}> Remove ExtraSpaces</button>
+            <button className='btn btn-primary mx-1 my-2' onClick={clear}> Clear</button>
         </div>
         <div className='container my-3'>
             <h2>Your text summary</h2>
