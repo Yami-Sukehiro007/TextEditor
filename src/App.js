@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar title="TextEdi" about="About TextEdi" mode={mode} toggleMode={toggleMode} />
+        <Navbar title="TextEditor" about="About TextEditor" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className='container my-3'>
           <Routes>

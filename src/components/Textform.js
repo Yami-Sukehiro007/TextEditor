@@ -56,13 +56,13 @@ export default function Textform(props) {
       setText(newText.join(" "));
       props.showAlert("Extra spaces removed!", "success");
   }
-    const [text,setText]=useState('Enter text here');
+    const [text,setText]=useState('');
   return (
     <>
         <div>
             <div className="mb-3">
                 <h1>{props.heading}</h1>
-            <textarea className="form-control"  value={text} onChange={handleOnChange} id="mybox" rows="8"></textarea>
+            <textarea className="form-control"  value={text} onChange={handleOnChange} id="mybox" rows="8" placeholder="Enter your text here"></textarea>
             </div>
             <button className='btn btn-primary mx-1 my-2' onClick={handleUpclick}> UpperCase</button>
             <button className='btn btn-primary mx-1 my-2' onClick={handleDownclick}> LowerCase</button>
@@ -74,7 +74,7 @@ export default function Textform(props) {
         </div>
         <div className='container my-3'>
             <h2>Your text summary</h2>
-            <p>{text.split(" ").length} <b>words</b> and {text.length} <b>characters</b></p>
+            <p>{text?text.split(" ").length:0} <b>words</b> and {text.length} <b>characters</b></p>
             <h2 >Preview</h2>
             <p>{text}</p>
 
