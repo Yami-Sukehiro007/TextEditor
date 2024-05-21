@@ -34,7 +34,7 @@ export default function About() {
                     What is this?
                 </button>
                 </h2>
-                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style={myStyle}>
+                <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style={myStyle}>
                 <div className="accordion-body" style={myStyle}>
                     <strong>This is an text editor.</strong> .
                 </div>
